@@ -1,0 +1,121 @@
+@charset "utf-8";
+html { overflow-y: scroll;}
+/**
+ * General elements
+ */
+body {
+  color: #333;
+  font-family: arial, sans-serif;
+}
+ 
+/**
+ * Layout of the main page elements 
+ */
+#wrapper {
+  margin: 0 auto;
+  width: 980px; 
+  padding: 10px;
+}
+ 
+ 
+/**
+ * Layout for header
+ */
+#header {
+  position: relative;
+  margin-bottom: 40px;
+}
+ 
+.sitetitle {
+  position: absolute;
+  top: 6px;
+  left: 150px;
+  font-size: 48px;
+}
+ 
+.siteslogan {
+  position: absolute;
+  top: 65px;
+  left: 150px;
+  font-style: italic;
+  color: #666;
+}
+ 
+ 
+/**
+ * Layout for main
+ */
+#main {
+  min-height: 20em;
+}
+ 
+ 
+/**
+ * Layout for footer
+ */
+#footer {
+  margin-top: 40px;
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+}
+ 
+.sitefooter {
+  color: #666;
+}
+/**
+* Navbar menu
+*/
+.navbar {display: block;background-color:#333;font-family:Verdana;padding:0.5em; border-bottom:5px solid #fff; }
+.navbar a {background-color:#999;color:#fff;padding:0.3em;text-decoration:none;}
+.navbar a:hover {background-color:#666;padding:0.5em 0.3em 0.5em 0.3em}
+.navbar a.selected {background-color:#fff;padding:0.3em 0.2em 0.5em 0.2em;color:#333;}
+
+/**
+* SubMenu
+*/
+.submenu {display: block;background-color:#666;font-family:Verdana;padding:0.5em; border-top:3px solid #fff; }
+.submenu a {background-color:#999;color:#fff;padding:0.2em;text-decoration:none;}
+.submenu a:hover {background-color:#666;padding:0.5em 0.2em 0.5em 0.2em}
+.submenu a.selected {background-color:#fff;padding:0.5em 0.2em 0.5em 0.2em;color:#333;}
+
+
+
+
+
+/**
+ * CSS sprite for a dice with six faces.
+ *
+ */
+ul.dice {
+	float:left;
+	
+	margin-left:100px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ 
+ul.dice li {
+  display: inline-block;
+  padding: 0;
+  margin: 0 4px 0 0;
+  width: 32px;
+  height: 32px;
+  background: url(../img/dicefaces.jpg) no-repeat;
+}
+ 
+ul.dice li.dice-1 { background-position: -160px 0px; }
+ul.dice li.dice-2 { background-position: -128px 0px; }
+ul.dice li.dice-3 { background-position:  -96px 0px; }
+ul.dice li.dice-4 { background-position:  -64px 0px; }
+ul.dice li.dice-5 { background-position:  -32px 0px; }
+ul.dice li.dice-6 { background-position:    0px 0px; }
+
+/**
+*Button style
+*
+*/
+a.button-default { padding:5px 5px 5px 5px; color:#000;text-decoration:none; min-width:200px; height:40px; border:2px solid #CCC; margin-bottom:10px; background:#999; border-radius:10px; }
+a.button-default:hover { background:#333; color:#fff; }
+/* CSS Document */
+
